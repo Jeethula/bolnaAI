@@ -295,8 +295,8 @@ importers:
         specifier: workspace:*
         version: link:../storage
       stripe:
-        specifier: ^16.7.0
-        version: 16.7.0
+        specifier: ^17.1.0
+        version: 17.1.0
       superjson:
         specifier: ^2.2.1
         version: 2.2.1
@@ -4070,6 +4070,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -5901,8 +5902,8 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  stripe@16.7.0:
-    resolution: {integrity: sha512-BJCSEtqN8LJsPuPkjQmB/LlBl00uxi9FIPa6LNcF80ofMKqfnuervDhwWSZqCs6xJk/i9vx1D9lRoDnqSmym2w==}
+  stripe@17.1.0:
+    resolution: {integrity: sha512-sNRsJx7LPP2Gg6cBJoHJqhr+UoBVZZRes2BDqbrg+1FDBxJc4Yn+LkrpJ/VnL3XQ3+6I5GrOUnSSFfE/joDFjw==}
     engines: {node: '>=12.*'}
 
   strnum@1.0.5:
@@ -12610,7 +12611,7 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  stripe@16.7.0:
+  stripe@17.1.0:
     dependencies:
       '@types/node': 22.1.0
       qs: 6.12.1
