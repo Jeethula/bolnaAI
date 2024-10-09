@@ -301,8 +301,8 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       use-intl:
-        specifier: ^3.17.2
-        version: 3.17.2(react@18.3.1)
+        specifier: ^3.21.1
+        version: 3.21.1(react@18.3.1)
       utils:
         specifier: workspace:*
         version: link:../utils
@@ -468,8 +468,8 @@ importers:
         specifier: ^2.1.6
         version: 2.1.6(@swc/helpers@0.5.5)(eslint@8.57.0)
       use-intl:
-        specifier: ^3.17.2
-        version: 3.17.2(react@18.3.1)
+        specifier: ^3.21.1
+        version: 3.21.1(react@18.3.1)
     devDependencies:
       '@biomejs/biome':
         specifier: 1.8.3
@@ -4070,6 +4070,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -6219,6 +6220,11 @@ packages:
 
   use-intl@3.17.2:
     resolution: {integrity: sha512-9lPgt41nS8x4AYCLfIC9VKCmamnVxzPM2nze7lpp/I1uaSSQvIz5MQpYUFikv08cMUsCwAWahU0e+arHInpdcw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+
+  use-intl@3.21.1:
+    resolution: {integrity: sha512-52kYgcydYkG9SX0ZZGt7W6WD2Va01hwe15bDgkXuaTdSxrF9fDu6hHTV5DxIuSmSSf/FEcBo/nodpw3ZhY31Lw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
@@ -12961,6 +12967,12 @@ snapshots:
       '@types/react': 18.3.3
 
   use-intl@3.17.2(react@18.3.1):
+    dependencies:
+      '@formatjs/fast-memoize': 2.2.0
+      intl-messageformat: 10.5.14
+      react: 18.3.1
+
+  use-intl@3.21.1(react@18.3.1):
     dependencies:
       '@formatjs/fast-memoize': 2.2.0
       intl-messageformat: 10.5.14
