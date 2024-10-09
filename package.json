@@ -23,5 +23,9 @@
 		"tsconfig": "workspace:*",
 		"turbo": "^2.0.12",
 		"typescript": "5.5.4"
+	},
+	"dependencies": {
+		"@radix-ui/react-slider": "^1.2.1",
+		"@radix-ui/react-switch": "^1.1.1"
 	}
 }
