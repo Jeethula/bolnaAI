@@ -76,7 +76,7 @@
 		"mdx": "^0.3.1",
 		"postcss": "8.4.41",
 		"rehype-img-size": "^1.0.1",
-		"start-server-and-test": "^2.0.5",
+		"start-server-and-test": "^2.0.8",
 		"tailwind-config": "workspace:*",
 		"tailwindcss": "3.4.9",
 		"tsconfig": "workspace:*"
