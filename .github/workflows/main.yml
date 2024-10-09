@@ -1,0 +1,39 @@
+name: Validate code and run tests
+
+on: push
+
+jobs:
+  lint:
+    name: Linting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+      - name: Run Biome
+        run: biome ci .
+  e2e:
+    name: E2E tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+      - uses: pnpm/action-setup@v4
+      - name: Install cypress
+        uses: cypress-io/github-action@v6
+        with:
+          runTests: false
+      - run: pnpm build
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          install: false
+          working-directory: apps/web
+          start: pnpm start
+          wait-on: "http://localhost:3000"
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{secrets.NEXT_PUBLIC_SITE_URL}}
+          DATABASE_URL: ${{secrets.DATABASE_URL}}
+          STRIPE_SECRET_KEY: ${{secrets.STRIPE_SECRET_KEY}}

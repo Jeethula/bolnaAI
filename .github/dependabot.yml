@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "daily"
+    groups:
+      trpc:
+        patterns:
+          - "@trpc/*"
+      content-collections:
+        patterns:
+          - "@content-collections/*"
+      prisma:
+        patterns:
+          - "@prisma/*"
+          - "prisma"
+      radix-ui:
+        patterns:
+          - "@radix-ui/*"
