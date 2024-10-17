@@ -1,7 +1,7 @@
 {
 	"dependencies": {
 		"@lemonsqueezy/lemonsqueezy.js": "^3.2.0",
-		"@trpc/server": "11.0.0-rc.477",
+		"@trpc/server": "11.0.0-rc.580",
 		"auth": "workspace:*",
 		"change-case": "^5.4.4",
 		"database": "workspace:*",
