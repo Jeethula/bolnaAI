@@ -19,7 +19,7 @@
 		"@types/mjml": "^4.7.2",
 		"@types/node": "22.1.0",
 		"@types/nodemailer": "^6.4.15",
-		"@types/react": "18.3.3",
+		"@types/react": "18.3.12",
 		"tailwind-config": "workspace:*",
 		"tsconfig": "workspace:*"
 	},
