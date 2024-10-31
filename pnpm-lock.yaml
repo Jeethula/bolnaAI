@@ -278,8 +278,8 @@ importers:
   packages/api:
     dependencies:
       '@lemonsqueezy/lemonsqueezy.js':
-        specifier: ^3.2.0
-        version: 3.2.0
+        specifier: ^3.3.1
+        version: 3.3.1
       '@trpc/server':
         specifier: 11.0.0-rc.477
         version: 11.0.0-rc.477
@@ -1602,8 +1602,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lemonsqueezy/lemonsqueezy.js@3.2.0':
-    resolution: {integrity: sha512-6K72T4XEjNTu1WrIFMfvG0FgOkDhexCD+V7IKtajyW2fzZaHeMF57mgrFAVskNOlVMuWvb1wzQ/JZ68cfxm9mw==}
+  '@lemonsqueezy/lemonsqueezy.js@3.3.1':
+    resolution: {integrity: sha512-gM/FdNsK3BlrD6JRrhmiyqBXQsCpzSUdKSoZwJMQfXqfqcK321og+uMssc6HYcygUMrGvPnNJyJ1RqZPFDrgtg==}
     engines: {node: '>=20'}
 
   '@lucia-auth/adapter-prisma@4.0.1':
@@ -7616,7 +7616,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@lemonsqueezy/lemonsqueezy.js@3.2.0': {}
+  '@lemonsqueezy/lemonsqueezy.js@3.3.1': {}
 
   '@lucia-auth/adapter-prisma@4.0.1(@prisma/client@5.18.0(prisma@5.18.0))(lucia@3.2.0)':
     dependencies:
