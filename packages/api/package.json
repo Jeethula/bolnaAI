@@ -20,7 +20,7 @@
 		"@biomejs/biome": "1.8.3",
 		"@types/react": "18.3.3",
 		"encoding": "^0.1.13",
-		"prisma": "^5.18.0",
+		"prisma": "^5.22.0",
 		"tsconfig": "workspace:*"
 	},
 	"main": "./index.tsx",
